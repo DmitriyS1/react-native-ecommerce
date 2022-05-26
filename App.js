@@ -12,6 +12,7 @@ import { CartProvider } from './CartContext.js';
 const Stack = createNativeStackNavigator();
 
 function App() {
+  
   return (
     <CartProvider>
       <NavigationContainer>
