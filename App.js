@@ -8,6 +8,7 @@ import { ProductDetails } from './screens/ProductDetails.js';
 import { Cart } from './screens/Cart.js';
 import { CartIcon } from './components/CartIcon.js';
 import { CartProvider } from './CartContext.js';
+import { Admin } from './screens/Admin.js';
 
 const Stack = createNativeStackNavigator();
 
@@ -34,6 +35,12 @@ function App() {
             title: 'My cart',
             headerTitleStyle: styles.headerTitle,
             headerRight: () => <CartIcon navigation={navigation}/>,
+          })} />
+          <Stack.Screen name='Admin' component={Admin}
+          options={({ navigation }) => ({
+            title: 'Admin panel',
+            headerTitleStyle: styles.headerTitle,
+            //headerRight: () => <CartIcon navigation={navigation} />,
           })} />
         </Stack.Navigator>
       </NavigationContainer>
