@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Image, View, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 
 export function Payment({ shopHash, rubAmount, created, etherAmount, payerAddress, isPayedToShop, comission, onPress }) {
     return (

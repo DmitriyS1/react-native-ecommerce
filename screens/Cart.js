@@ -79,7 +79,9 @@ export function Cart ({navigation}) {
           <Text style={styles.lineRight}>$ {total}</Text>
           <Button  title="Buy" onPress={async () => {
             await handlePayment(total);
-            console.log('Buy, your order prise is ', total);
+          }} />
+          <Button title="Admin panel" onPress={async () => {
+            navigation.navigate('Admin');
           }} />
        </View>
        

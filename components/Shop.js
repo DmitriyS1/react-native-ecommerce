@@ -9,9 +9,6 @@ export function Shop({ shopHash, id, created, bankAccount, onPress }) {
                 <Text style={styles.name}>Hash: {shopHash}</Text>
                 <Text style={styles.name}>Bank Account: {bankAccount}</Text>
                 <Text style={styles.name}>Created date: {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' }).format(created)}</Text>
-                <Text style={styles.price}>RUB: {rubAmount}</Text>
-                <Text style={styles.price}>Wei: {etherAmount}</Text>
-                <Text style={styles.price}>Commission (Wei): {comission}</Text>
             </View>
         </TouchableOpacity>
     );
